@@ -1,0 +1,41 @@
+
+<script>
+window.customCartDrawer = {
+        position: 'right', //right, left
+        width: '360px', //css valid drawer width
+        height: '100%', //css valid drawer height
+        margin: '0', // css valid margin for drawer container
+        effect: 'slide', //slide, fade
+        effectDuration: '0.4s', //appearing effect duration in ms or s
+        effectEasing: 'cubic-bezier(.55,0,.1,1)', //valid css easing, like: ease, linear, cubic-bezier
+        backgroundColor: '#fff', //drawer background color
+        color: '#000', //drawer main text color 
+        basicFontSize: '13px', //drawer base font size
+        useCustomScrollbar: true, //use custom scrollbar, works in webkit browsers only
+        scrollbarTrackColor: '#ccc', //webkit browsers scrolltrack color
+        scrollbarThumbColor: '#000', //webkit browsers scrollthumb color
+        scrollbarWidth: '4px', //webkit browsers scrollbar width
+        overlayColor: 'rgba(0, 0, 0, 0.6)', //overlay color to fade main site content
+        closeIconSize: '22px', //drawer close icon size
+        closeIconColor: '#000', //drawer close icon color
+        closeIconBackgroundColor: '#fff', //drawer close icon background
+        closeIconPosition: '', //left, right
+        closeIconTop: '0px', //css top position of icon, 0 is default
+        headerColor: '#000', //header text color
+        headerFontSize: '30px', //header text font-size
+        headerTextAlign: 'left', //header text-align: left, center, right
+        headerMargin: '0', // valid css margin
+        headerTextTransform: '', //set valid css text-transform: uppercase,capitalize,lowercase
+        pricesPreText: 'Price:', //add some text to prices
+        subTotalAlign: 'right', //subtotal text-align
+        subTotalFontSize: '16px', //subtotal font-size
+        checkoutButtonFontSize: '16px', //checkout button font-size
+        checkoutButtonColor: '#fff', //checkout button color
+        checkoutButtonBackgroundColor: '#E195AB', //checkout button background color
+        checkoutButtonAlign: 'right', //checkout button align
+        showIfCartUpdated: true, //show drawer if product was added/removed from cart
+        closeOnOverlayClick: true, //close drawer if site or overlay clicked
+        onUpdateFunction: null //function called on each cart update and on initial build, has drawer YUI element and cart json data in callback: function(el,data){}
+    };
+</script>
+<script async src="https://assets.squarewebsites.org/custom-cart-drawer/drawer.min.js"></script>
